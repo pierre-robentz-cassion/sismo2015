@@ -27,6 +27,9 @@ class Auth extends CI_Controller
 	 *
 	 * @return void
 	 */
+	function view(){
+		$this->load->view('auth/register_and_login');
+	}
 	function login()
 	{
 		if ($this->tank_auth->is_logged_in()) {									// logged in
